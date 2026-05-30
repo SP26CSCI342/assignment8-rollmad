@@ -18,7 +18,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-platescout.vercel.app",
+      "https://assignment8-rollmad-hjc6x2b4i-rollmads-projects.vercel.app/",
       /\.vercel\.app$/,
     ],
     credentials: true,
