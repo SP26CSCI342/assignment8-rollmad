@@ -10,6 +10,8 @@ import toast from "react-hot-toast";
 function Profile() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
+  const baseUrl =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
 
   useEffect(() => {
     const raw = localStorage.getItem("User");
@@ -36,7 +38,7 @@ function Profile() {
     const token = localStorage.getItem("token");
 
     try {
-      await fetch("/api/logout", {
+      await fetch('${baseUrl}/api/logout', {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

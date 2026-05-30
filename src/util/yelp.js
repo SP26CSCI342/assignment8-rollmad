@@ -1,5 +1,7 @@
 const searchBusinesses = async (term, location, sortBy) => {
-  const endpoint = `/api/yelp/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`;
+  const baseUrl =
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000";
+  const endpoint = `${baseUrl}/api/yelp/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`;
 
   const response = await fetch(endpoint);
 
