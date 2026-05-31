@@ -6,8 +6,8 @@
 
 ## Live URLs
 
-- **Client:** https://assignment8-rollmad-hjc6x2b4i-rollmads-projects.vercel.app/
-- **Server:** https://platescout-yourname.onrender.com
+- **Client:** https://assignment8-rollmad.vercel.app/
+- **Server:** https://platescout-denze.onrender.com/
 - **Server health check:** https://platescout-denze.onrender.com/api/health
 
 ## Local setup
